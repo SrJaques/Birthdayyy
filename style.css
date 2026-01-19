@@ -1337,18 +1337,16 @@ body {
     }
 }
 
+/* tentativa de correção pelo mobile do texto em card2*/
+
 @media (max-width: 768px) {
     .boxMail .boxMail-container .card2 h2 {
         opacity: 1 !important;
         animation: none !important;
     }
 } @media (max-width: 768px) {
-  .box__letter {
-    display: none !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
+ 
   }
-}
 @media (max-width: 768px) {
   .boxMail .boxMail-container .card2-content {
     max-height: 100%;
