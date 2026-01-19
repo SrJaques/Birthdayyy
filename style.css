@@ -1051,7 +1051,9 @@ body {
     position: relative;
     background-color: #FF7882;
     transition: all 1s;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
     font-family: "Inter", serif;
     color: #fff;
 }
@@ -1340,4 +1342,22 @@ body {
         opacity: 1 !important;
         animation: none !important;
     }
+} @media (max-width: 768px) {
+  .box__letter {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .boxMail .boxMail-container .card2-content {
+    max-height: 100%;
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .boxMail *:hover {
+    transform: none !important;
+    animation: none !important;
+  }
 }
